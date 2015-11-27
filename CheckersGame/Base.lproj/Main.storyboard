@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CheckersGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z2g-tp-5aT">
+                                <rect key="frame" x="76" y="76" width="448" height="448"/>
+                                <subviews>
+                                    <view tag="57" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3rz-p1-i2e" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="392" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="64" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0zZ-PI-rM3" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="392" y="392" width="56" height="56"/>
+                                        <subviews>
+                                            <view tag="212" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hEC-I1-pDK" customClass="Check" customModule="CheckersGame" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.25634284016636955" green="0.16218541011769133" blue="0.070200487747927254" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="hEC-I1-pDK" firstAttribute="top" secondItem="0zZ-PI-rM3" secondAttribute="top" constant="8" id="ND8-Zz-GYC"/>
+                                            <constraint firstAttribute="trailing" secondItem="hEC-I1-pDK" secondAttribute="trailing" constant="8" id="khM-Yn-YLe"/>
+                                            <constraint firstItem="hEC-I1-pDK" firstAttribute="leading" secondItem="0zZ-PI-rM3" secondAttribute="leading" constant="8" id="oaf-Cc-3tw"/>
+                                            <constraint firstAttribute="bottom" secondItem="hEC-I1-pDK" secondAttribute="bottom" constant="8" id="sYG-hR-fM3"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="58" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AdM-Ji-YDA" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="56" y="392" width="56" height="56"/>
+                                        <subviews>
+                                            <view tag="209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pQ5-ny-EFS" customClass="Check" customModule="CheckersGame" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.25634284016636955" green="0.16218541011769133" blue="0.070200487747927254" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="pQ5-ny-EFS" firstAttribute="leading" secondItem="AdM-Ji-YDA" secondAttribute="leading" constant="8" id="Z1R-Py-Kyv"/>
+                                            <constraint firstItem="pQ5-ny-EFS" firstAttribute="top" secondItem="AdM-Ji-YDA" secondAttribute="top" constant="8" id="b7E-sv-gxS"/>
+                                            <constraint firstAttribute="trailing" secondItem="pQ5-ny-EFS" secondAttribute="trailing" constant="8" id="kn3-oZ-ssw"/>
+                                            <constraint firstAttribute="bottom" secondItem="pQ5-ny-EFS" secondAttribute="bottom" constant="8" id="vmM-FP-Al8"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="59" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kpl-GV-qvZ" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="112" y="392" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="60" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xcm-Jf-mz7" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="168" y="392" width="56" height="56"/>
+                                        <subviews>
+                                            <view tag="210" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LDK-7s-EHQ" customClass="Check" customModule="CheckersGame" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.25634284016636955" green="0.16218541011769133" blue="0.070200487747927254" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="LDK-7s-EHQ" firstAttribute="top" secondItem="xcm-Jf-mz7" secondAttribute="top" constant="8" id="B7r-Tr-dVm"/>
+                                            <constraint firstAttribute="trailing" secondItem="LDK-7s-EHQ" secondAttribute="trailing" constant="8" id="Kmc-DU-Aaf"/>
+                                            <constraint firstAttribute="bottom" secondItem="LDK-7s-EHQ" secondAttribute="bottom" constant="8" id="hyw-ML-zjf"/>
+                                            <constraint firstItem="LDK-7s-EHQ" firstAttribute="leading" secondItem="xcm-Jf-mz7" secondAttribute="leading" constant="8" id="wdF-if-cOY"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="61" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0tw-as-iez" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="224" y="392" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="62" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wu1-lE-5Ep" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="280" y="392" width="56" height="56"/>
+                                        <subviews>
+                                            <view tag="211" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5N-pA-0Nt" customClass="Check" customModule="CheckersGame" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.25634284016636955" green="0.16218541011769133" blue="0.070200487747927254" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="i5N-pA-0Nt" firstAttribute="leading" secondItem="wu1-lE-5Ep" secondAttribute="leading" constant="8" id="D5i-PC-A3T"/>
+                                            <constraint firstItem="i5N-pA-0Nt" firstAttribute="top" secondItem="wu1-lE-5Ep" secondAttribute="top" constant="8" id="EEm-st-Djc"/>
+                                            <constraint firstAttribute="bottom" secondItem="i5N-pA-0Nt" secondAttribute="bottom" constant="8" id="eR6-1Y-Uhw"/>
+                                            <constraint firstAttribute="trailing" secondItem="i5N-pA-0Nt" secondAttribute="trailing" constant="8" id="k4Y-qg-eSV"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="63" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v5c-iA-Z2Q" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="336" y="392" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="49" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vy3-gw-HHm" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="336" width="56" height="56"/>
+                                        <subviews>
+                                            <view tag="205" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z0T-N1-6Zo" customClass="Check" customModule="CheckersGame" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.25634284016636955" green="0.16218541011769133" blue="0.070200487747927254" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="z0T-N1-6Zo" firstAttribute="top" secondItem="Vy3-gw-HHm" secondAttribute="top" constant="8" id="Rws-xG-T9K"/>
+                                            <constraint firstAttribute="bottom" secondItem="z0T-N1-6Zo" secondAttribute="bottom" constant="8" id="dRq-u5-caf"/>
+                                            <constraint firstAttribute="trailing" secondItem="z0T-N1-6Zo" secondAttribute="trailing" constant="8" id="n54-FT-ywn"/>
+                                            <constraint firstItem="z0T-N1-6Zo" firstAttribute="leading" secondItem="Vy3-gw-HHm" secondAttribute="leading" constant="8" id="pzN-g7-2lY"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="56" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ySe-hu-HyG" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="392" y="336" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="50" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1m-ld-JH0" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="56" y="336" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="51" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="trF-rM-Vwy" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="112" y="336" width="56" height="56"/>
+                                        <subviews>
+                                            <view tag="206" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SA2-im-L8i" customClass="Check" customModule="CheckersGame" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.25634284016636955" green="0.16218541011769133" blue="0.070200487747927254" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="SA2-im-L8i" secondAttribute="trailing" constant="8" id="1EP-4I-JqH"/>
+                                            <constraint firstItem="SA2-im-L8i" firstAttribute="top" secondItem="trF-rM-Vwy" secondAttribute="top" constant="8" id="2I4-yD-LBq"/>
+                                            <constraint firstItem="SA2-im-L8i" firstAttribute="leading" secondItem="trF-rM-Vwy" secondAttribute="leading" constant="8" id="pii-Hw-fMo"/>
+                                            <constraint firstAttribute="bottom" secondItem="SA2-im-L8i" secondAttribute="bottom" constant="8" id="yR0-Lj-jHm"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="52" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2fJ-UY-uWl" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="168" y="336" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="53" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KxZ-VC-dCQ" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="224" y="336" width="56" height="56"/>
+                                        <subviews>
+                                            <view tag="207" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ls3-kW-CbW" customClass="Check" customModule="CheckersGame" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.25634284016636955" green="0.16218541011769133" blue="0.070200487747927254" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Ls3-kW-CbW" secondAttribute="bottom" constant="8" id="AXG-BL-ISk"/>
+                                            <constraint firstItem="Ls3-kW-CbW" firstAttribute="top" secondItem="KxZ-VC-dCQ" secondAttribute="top" constant="8" id="a5x-9O-1Pu"/>
+                                            <constraint firstItem="Ls3-kW-CbW" firstAttribute="leading" secondItem="KxZ-VC-dCQ" secondAttribute="leading" constant="8" id="anS-5z-FMQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ls3-kW-CbW" secondAttribute="trailing" constant="8" id="iKV-h8-J18"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="54" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zjU-eN-WuX" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="280" y="336" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="55" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z0Y-6a-bYZ" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="336" y="336" width="56" height="56"/>
+                                        <subviews>
+                                            <view tag="208" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M2Y-Hr-0w3" customClass="Check" customModule="CheckersGame" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.25634284016636955" green="0.16218541011769133" blue="0.070200487747927254" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="M2Y-Hr-0w3" firstAttribute="top" secondItem="z0Y-6a-bYZ" secondAttribute="top" constant="8" id="7mS-bG-2SD"/>
+                                            <constraint firstItem="M2Y-Hr-0w3" firstAttribute="leading" secondItem="z0Y-6a-bYZ" secondAttribute="leading" constant="8" id="9qT-Me-bN0"/>
+                                            <constraint firstAttribute="bottom" secondItem="M2Y-Hr-0w3" secondAttribute="bottom" constant="8" id="GXL-2t-RkS"/>
+                                            <constraint firstAttribute="trailing" secondItem="M2Y-Hr-0w3" secondAttribute="trailing" constant="8" id="VlE-LJ-ngb"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="41" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wcx-bS-vVA" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="280" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="48" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CMJ-3w-mwa" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="392" y="280" width="56" height="56"/>
+                                        <subviews>
+                                            <view tag="204" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cFf-JU-eaa" customClass="Check" customModule="CheckersGame" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.25634284016636955" green="0.16218541011769133" blue="0.070200487747927254" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="cFf-JU-eaa" firstAttribute="top" secondItem="CMJ-3w-mwa" secondAttribute="top" constant="8" id="4fC-XJ-8dI"/>
+                                            <constraint firstAttribute="trailing" secondItem="cFf-JU-eaa" secondAttribute="trailing" constant="8" id="chA-9f-XdU"/>
+                                            <constraint firstItem="cFf-JU-eaa" firstAttribute="leading" secondItem="CMJ-3w-mwa" secondAttribute="leading" constant="8" id="j8U-qh-nEe"/>
+                                            <constraint firstAttribute="bottom" secondItem="cFf-JU-eaa" secondAttribute="bottom" constant="8" id="zzL-nW-DFO"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="42" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qkN-eH-4LQ" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="56" y="280" width="56" height="56"/>
+                                        <subviews>
+                                            <view tag="201" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OsU-xU-jvS" customClass="Check" customModule="CheckersGame" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.25634284016636955" green="0.16218541011769133" blue="0.070200487747927254" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="OsU-xU-jvS" firstAttribute="leading" secondItem="qkN-eH-4LQ" secondAttribute="leading" constant="8" id="alH-ix-snK"/>
+                                            <constraint firstItem="OsU-xU-jvS" firstAttribute="top" secondItem="qkN-eH-4LQ" secondAttribute="top" constant="8" id="d9g-dG-hbi"/>
+                                            <constraint firstAttribute="trailing" secondItem="OsU-xU-jvS" secondAttribute="trailing" constant="8" id="l3k-4I-fa6"/>
+                                            <constraint firstAttribute="bottom" secondItem="OsU-xU-jvS" secondAttribute="bottom" constant="8" id="zK1-eu-uBg"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="43" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTi-Fq-d2w" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="112" y="280" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="44" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rdP-Nr-bAu" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="168" y="280" width="56" height="56"/>
+                                        <subviews>
+                                            <view tag="202" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fmr-Y9-kxg" customClass="Check" customModule="CheckersGame" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.25634284016636955" green="0.16218541011769133" blue="0.070200487747927254" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="fmr-Y9-kxg" firstAttribute="leading" secondItem="rdP-Nr-bAu" secondAttribute="leading" constant="8" id="6RN-hD-xIs"/>
+                                            <constraint firstAttribute="bottom" secondItem="fmr-Y9-kxg" secondAttribute="bottom" constant="8" id="W5P-9j-Tel"/>
+                                            <constraint firstAttribute="trailing" secondItem="fmr-Y9-kxg" secondAttribute="trailing" constant="8" id="i8A-h8-uLY"/>
+                                            <constraint firstItem="fmr-Y9-kxg" firstAttribute="top" secondItem="rdP-Nr-bAu" secondAttribute="top" constant="8" id="ta2-Dc-O7J"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="45" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l3V-Or-66G" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="224" y="280" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="46" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HB6-Ak-DgA" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="280" y="280" width="56" height="56"/>
+                                        <subviews>
+                                            <view tag="203" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sNr-u4-jcm" customClass="Check" customModule="CheckersGame" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.25634284016636955" green="0.16218541011769133" blue="0.070200487747927254" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="sNr-u4-jcm" secondAttribute="bottom" constant="8" id="Eap-Th-wwS"/>
+                                            <constraint firstItem="sNr-u4-jcm" firstAttribute="top" secondItem="HB6-Ak-DgA" secondAttribute="top" constant="8" id="GdO-Hn-7mW"/>
+                                            <constraint firstItem="sNr-u4-jcm" firstAttribute="leading" secondItem="HB6-Ak-DgA" secondAttribute="leading" constant="8" id="l8s-Ax-wRi"/>
+                                            <constraint firstAttribute="trailing" secondItem="sNr-u4-jcm" secondAttribute="trailing" constant="8" id="lsE-Bu-E9L"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="47" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKb-7e-tBu" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="336" y="280" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="33" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qcm-1s-mtU" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="224" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view tag="40" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ZJ-MB-zwu" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="392" y="224" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="34" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bYN-kM-2us" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="56" y="224" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="35" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0IQ-a1-EkA" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="112" y="224" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view tag="36" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pkD-Nn-u8C" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="168" y="224" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="37" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8YH-8H-a65" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="224" y="224" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view tag="38" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kkP-R7-2hA" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="280" y="224" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="39" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pSV-DK-2DG" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="336" y="224" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view tag="25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ech-JB-OLH" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="168" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="32" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2SC-Fx-ObG" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="392" y="168" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view tag="26" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dXk-fT-RtM" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="56" y="168" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view tag="27" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r8b-a6-Pvc" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="112" y="168" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="28" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7al-WW-UOH" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="168" y="168" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view tag="29" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIR-uB-J8E" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="224" y="168" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="30" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="75K-f8-5nv" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="280" y="168" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view tag="31" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5mv-8W-cza" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="336" y="168" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="17" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uyz-mU-Be0" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="112" width="56" height="56"/>
+                                        <subviews>
+                                            <view tag="109" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3rj-vL-lMe" customClass="Check" customModule="CheckersGame" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="0.66007765908396876" blue="0.33044894564789651" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="3rj-vL-lMe" secondAttribute="trailing" constant="8" id="2jJ-aV-sDy"/>
+                                            <constraint firstItem="3rj-vL-lMe" firstAttribute="leading" secondItem="uyz-mU-Be0" secondAttribute="leading" constant="8" id="Dq2-h5-X5g"/>
+                                            <constraint firstAttribute="bottom" secondItem="3rj-vL-lMe" secondAttribute="bottom" constant="8" id="drh-ZP-4PY"/>
+                                            <constraint firstItem="3rj-vL-lMe" firstAttribute="top" secondItem="uyz-mU-Be0" secondAttribute="top" constant="8" id="uhl-j8-g9A"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="24" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Yk-US-FgX" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="392" y="112" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="18" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yNb-S7-D3i" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="56" y="112" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="19" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnW-Nh-fAI" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="112" y="112" width="56" height="56"/>
+                                        <subviews>
+                                            <view tag="110" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgK-3u-KqH" customClass="Check" customModule="CheckersGame" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="0.66007765908396876" blue="0.33044894564789651" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="fgK-3u-KqH" secondAttribute="trailing" constant="8" id="1Gb-ae-geX"/>
+                                            <constraint firstItem="fgK-3u-KqH" firstAttribute="leading" secondItem="bnW-Nh-fAI" secondAttribute="leading" constant="8" id="Zpr-wk-Y3m"/>
+                                            <constraint firstItem="fgK-3u-KqH" firstAttribute="top" secondItem="bnW-Nh-fAI" secondAttribute="top" constant="8" id="c1i-Ka-pOe"/>
+                                            <constraint firstAttribute="bottom" secondItem="fgK-3u-KqH" secondAttribute="bottom" constant="8" id="i5V-h8-OFY"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="20" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zje-lB-8ds" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="168" y="112" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="21" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ftF-09-opb" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="224" y="112" width="56" height="56"/>
+                                        <subviews>
+                                            <view tag="111" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VAr-LX-KXC" customClass="Check" customModule="CheckersGame" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="0.66007765908396876" blue="0.33044894564789651" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="VAr-LX-KXC" secondAttribute="trailing" constant="8" id="7LR-WM-B6M"/>
+                                            <constraint firstItem="VAr-LX-KXC" firstAttribute="leading" secondItem="ftF-09-opb" secondAttribute="leading" constant="8" id="Cg8-zH-Xqe"/>
+                                            <constraint firstAttribute="bottom" secondItem="VAr-LX-KXC" secondAttribute="bottom" constant="8" id="KbV-Fp-om9"/>
+                                            <constraint firstItem="VAr-LX-KXC" firstAttribute="top" secondItem="ftF-09-opb" secondAttribute="top" constant="8" id="dPD-xd-6Hz"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="22" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N2S-Ha-G5W" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="280" y="112" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="23" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZEl-nj-0sv" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="336" y="112" width="56" height="56"/>
+                                        <subviews>
+                                            <view tag="112" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Cv-XL-Iod" customClass="Check" customModule="CheckersGame" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="0.66007765908396876" blue="0.33044894564789651" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="4Cv-XL-Iod" secondAttribute="trailing" constant="8" id="Gtr-qQ-2Vj"/>
+                                            <constraint firstAttribute="bottom" secondItem="4Cv-XL-Iod" secondAttribute="bottom" constant="8" id="U5B-wp-AzU"/>
+                                            <constraint firstItem="4Cv-XL-Iod" firstAttribute="leading" secondItem="ZEl-nj-0sv" secondAttribute="leading" constant="8" id="fLo-Ga-BRV"/>
+                                            <constraint firstItem="4Cv-XL-Iod" firstAttribute="top" secondItem="ZEl-nj-0sv" secondAttribute="top" constant="8" id="xth-oz-OCk"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="9" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RMD-30-7mi" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="56" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="16" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rO7-8Y-HyU" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="392" y="56" width="56" height="56"/>
+                                        <subviews>
+                                            <view tag="108" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NoX-rn-nqv" customClass="Check" customModule="CheckersGame" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="0.66007765908396876" blue="0.33044894564789651" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="NoX-rn-nqv" secondAttribute="bottom" constant="8" id="Kn6-j4-8p4"/>
+                                            <constraint firstItem="NoX-rn-nqv" firstAttribute="top" secondItem="rO7-8Y-HyU" secondAttribute="top" constant="8" id="ZzS-Yp-4ET"/>
+                                            <constraint firstAttribute="trailing" secondItem="NoX-rn-nqv" secondAttribute="trailing" constant="8" id="ef6-A8-mTT"/>
+                                            <constraint firstItem="NoX-rn-nqv" firstAttribute="leading" secondItem="rO7-8Y-HyU" secondAttribute="leading" constant="8" id="xl2-4f-biX"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DVs-dG-tlg" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="56" y="56" width="56" height="56"/>
+                                        <subviews>
+                                            <view tag="105" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KnD-Rc-lXz" customClass="Check" customModule="CheckersGame" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="0.66007765908396876" blue="0.33044894564789651" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="KnD-Rc-lXz" secondAttribute="trailing" constant="8" id="4AU-0T-zyJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="KnD-Rc-lXz" secondAttribute="bottom" constant="8" id="Ux6-dY-Pdm"/>
+                                            <constraint firstItem="KnD-Rc-lXz" firstAttribute="top" secondItem="DVs-dG-tlg" secondAttribute="top" constant="8" id="moa-v7-1o4"/>
+                                            <constraint firstItem="KnD-Rc-lXz" firstAttribute="leading" secondItem="DVs-dG-tlg" secondAttribute="leading" constant="8" id="w9w-k5-krr"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="11" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XZp-97-plA" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="112" y="56" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="12" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kWU-di-OPu" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="168" y="56" width="56" height="56"/>
+                                        <subviews>
+                                            <view tag="106" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0K-hA-SzP" customClass="Check" customModule="CheckersGame" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="0.66007765908396876" blue="0.33044894564789651" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="q0K-hA-SzP" secondAttribute="trailing" constant="8" id="1D1-7F-IKu"/>
+                                            <constraint firstItem="q0K-hA-SzP" firstAttribute="leading" secondItem="kWU-di-OPu" secondAttribute="leading" constant="8" id="TlC-Rt-tOz"/>
+                                            <constraint firstAttribute="bottom" secondItem="q0K-hA-SzP" secondAttribute="bottom" constant="8" id="kw6-cP-zuv"/>
+                                            <constraint firstItem="q0K-hA-SzP" firstAttribute="top" secondItem="kWU-di-OPu" secondAttribute="top" constant="8" id="lmJ-ca-IoC"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="13" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qlv-1f-a1i" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="224" y="56" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="14" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WeM-Xb-mW2" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="280" y="56" width="56" height="56"/>
+                                        <subviews>
+                                            <view tag="107" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83F-Ch-YBS" customClass="Check" customModule="CheckersGame" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="0.66007765908396876" blue="0.33044894564789651" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="83F-Ch-YBS" secondAttribute="bottom" constant="8" id="Goy-9c-ilW"/>
+                                            <constraint firstAttribute="trailing" secondItem="83F-Ch-YBS" secondAttribute="trailing" constant="8" id="Gvu-og-E3f"/>
+                                            <constraint firstItem="83F-Ch-YBS" firstAttribute="leading" secondItem="WeM-Xb-mW2" secondAttribute="leading" constant="8" id="hvn-6x-YRT"/>
+                                            <constraint firstItem="83F-Ch-YBS" firstAttribute="top" secondItem="WeM-Xb-mW2" secondAttribute="top" constant="8" id="sYE-m7-37Y"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="15" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K0B-UM-Q3f" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="336" y="56" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xWU-it-sBs" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                        <subviews>
+                                            <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VXH-Rr-UIr" customClass="Check" customModule="CheckersGame" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="0.66007765908396876" blue="0.33044894564789651" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="VXH-Rr-UIr" secondAttribute="trailing" constant="8" id="01w-OX-wYH"/>
+                                            <constraint firstAttribute="bottom" secondItem="VXH-Rr-UIr" secondAttribute="bottom" constant="8" id="aem-kk-xll"/>
+                                            <constraint firstItem="VXH-Rr-UIr" firstAttribute="leading" secondItem="xWU-it-sBs" secondAttribute="leading" constant="8" id="gBi-ZK-V9I"/>
+                                            <constraint firstItem="VXH-Rr-UIr" firstAttribute="top" secondItem="xWU-it-sBs" secondAttribute="top" constant="8" id="uOo-xc-B99"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="8" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8oQ-Jx-g1a" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="392" y="0.0" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nKs-PV-ZCS" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="56" y="0.0" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DxT-91-jx1" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="112" y="0.0" width="56" height="56"/>
+                                        <subviews>
+                                            <view tag="102" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rJS-zS-UWc" customClass="Check" customModule="CheckersGame" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="0.66007765908396876" blue="0.33044894564789651" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="rJS-zS-UWc" secondAttribute="bottom" constant="8" id="Ef3-jW-BuO"/>
+                                            <constraint firstItem="rJS-zS-UWc" firstAttribute="leading" secondItem="DxT-91-jx1" secondAttribute="leading" constant="8" id="JOZ-qF-pb3"/>
+                                            <constraint firstItem="rJS-zS-UWc" firstAttribute="top" secondItem="DxT-91-jx1" secondAttribute="top" constant="8" id="sFP-My-6zJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="rJS-zS-UWc" secondAttribute="trailing" constant="8" id="zrY-uq-07F"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oCG-G4-Q31" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="168" y="0.0" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Koq-b3-izP" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="224" y="0.0" width="56" height="56"/>
+                                        <subviews>
+                                            <view tag="103" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uUr-qA-MNm" customClass="Check" customModule="CheckersGame" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="0.66007765908396876" blue="0.33044894564789651" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="uUr-qA-MNm" firstAttribute="top" secondItem="Koq-b3-izP" secondAttribute="top" constant="8" id="54a-1l-JVK"/>
+                                            <constraint firstAttribute="trailing" secondItem="uUr-qA-MNm" secondAttribute="trailing" constant="8" id="L4Y-ea-N98"/>
+                                            <constraint firstAttribute="bottom" secondItem="uUr-qA-MNm" secondAttribute="bottom" constant="8" id="pOT-1c-2wq"/>
+                                            <constraint firstItem="uUr-qA-MNm" firstAttribute="leading" secondItem="Koq-b3-izP" secondAttribute="leading" constant="8" id="vcd-ab-f2x"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WQ8-El-D2d" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="280" y="0.0" width="56" height="56"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEG-Qj-o0K" customClass="Square" customModule="CheckersGame" customModuleProvider="target">
+                                        <rect key="frame" x="336" y="0.0" width="56" height="56"/>
+                                        <subviews>
+                                            <view tag="104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kf9-D7-scb" customClass="Check" customModule="CheckersGame" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="0.66007765908396876" blue="0.33044894564789651" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Kf9-D7-scb" firstAttribute="top" secondItem="LEG-Qj-o0K" secondAttribute="top" constant="8" id="Nk4-8n-sZR"/>
+                                            <constraint firstAttribute="bottom" secondItem="Kf9-D7-scb" secondAttribute="bottom" constant="8" id="Qnv-ie-wMr"/>
+                                            <constraint firstAttribute="trailing" secondItem="Kf9-D7-scb" secondAttribute="trailing" constant="8" id="Xi9-HC-T2p"/>
+                                            <constraint firstItem="Kf9-D7-scb" firstAttribute="leading" secondItem="LEG-Qj-o0K" secondAttribute="leading" constant="8" id="Ykp-Kd-2x1"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="pkD-Nn-u8C" firstAttribute="trailing" secondItem="rdP-Nr-bAu" secondAttribute="trailing" id="05m-Tq-5RP"/>
+                                    <constraint firstItem="yNb-S7-D3i" firstAttribute="trailing" secondItem="DVs-dG-tlg" secondAttribute="trailing" id="05o-lN-Rle"/>
+                                    <constraint firstItem="8oQ-Jx-g1a" firstAttribute="bottom" secondItem="LEG-Qj-o0K" secondAttribute="bottom" id="09v-rf-ncH"/>
+                                    <constraint firstItem="WQ8-El-D2d" firstAttribute="bottom" secondItem="Koq-b3-izP" secondAttribute="bottom" id="0AM-9R-29w"/>
+                                    <constraint firstItem="7ZJ-MB-zwu" firstAttribute="leading" secondItem="CMJ-3w-mwa" secondAttribute="leading" id="0Fi-Ba-Bf7"/>
+                                    <constraint firstItem="xWU-it-sBs" firstAttribute="trailing" secondItem="RMD-30-7mi" secondAttribute="trailing" id="0ND-0u-oTe"/>
+                                    <constraint firstItem="DxT-91-jx1" firstAttribute="bottom" secondItem="nKs-PV-ZCS" secondAttribute="bottom" id="0Nc-yo-H00"/>
+                                    <constraint firstItem="75K-f8-5nv" firstAttribute="top" secondItem="5mv-8W-cza" secondAttribute="top" id="1MQ-t8-pFX"/>
+                                    <constraint firstItem="rdP-Nr-bAu" firstAttribute="bottom" secondItem="rTi-Fq-d2w" secondAttribute="bottom" id="1OI-FX-CRx"/>
+                                    <constraint firstItem="oCG-G4-Q31" firstAttribute="bottom" secondItem="Koq-b3-izP" secondAttribute="bottom" id="1R3-vl-9gZ"/>
+                                    <constraint firstItem="bYN-kM-2us" firstAttribute="leading" secondItem="qkN-eH-4LQ" secondAttribute="leading" id="1Ul-e2-kts"/>
+                                    <constraint firstItem="bnW-Nh-fAI" firstAttribute="leading" secondItem="r8b-a6-Pvc" secondAttribute="leading" id="1Wb-aX-RFT"/>
+                                    <constraint firstItem="0tw-as-iez" firstAttribute="bottom" secondItem="wu1-lE-5Ep" secondAttribute="bottom" id="1YO-Mr-bpu"/>
+                                    <constraint firstItem="ftF-09-opb" firstAttribute="bottom" secondItem="N2S-Ha-G5W" secondAttribute="bottom" id="1Za-qO-SCs"/>
+                                    <constraint firstItem="WQ8-El-D2d" firstAttribute="leading" secondItem="Koq-b3-izP" secondAttribute="trailing" id="1aY-21-zde"/>
+                                    <constraint firstItem="zje-lB-8ds" firstAttribute="top" secondItem="bnW-Nh-fAI" secondAttribute="top" id="1cv-M0-zYO"/>
+                                    <constraint firstItem="KxZ-VC-dCQ" firstAttribute="bottom" secondItem="zjU-eN-WuX" secondAttribute="bottom" id="1oX-jS-KEe"/>
+                                    <constraint firstItem="LIR-uB-J8E" firstAttribute="leading" secondItem="8YH-8H-a65" secondAttribute="leading" id="1sz-8U-Xtk"/>
+                                    <constraint firstItem="AKb-7e-tBu" firstAttribute="bottom" secondItem="HB6-Ak-DgA" secondAttribute="bottom" id="1ut-Hi-QXo"/>
+                                    <constraint firstItem="Wcx-bS-vVA" firstAttribute="top" secondItem="Z2g-tp-5aT" secondAttribute="top" constant="280" id="1zV-kd-3bK"/>
+                                    <constraint firstItem="KxZ-VC-dCQ" firstAttribute="bottom" secondItem="2fJ-UY-uWl" secondAttribute="bottom" id="2Sb-eZ-KbH"/>
+                                    <constraint firstItem="8oQ-Jx-g1a" firstAttribute="leading" secondItem="LEG-Qj-o0K" secondAttribute="trailing" id="2Sb-vc-ulB"/>
+                                    <constraint firstItem="e1m-ld-JH0" firstAttribute="trailing" secondItem="AdM-Ji-YDA" secondAttribute="trailing" id="2XX-UR-sC7"/>
+                                    <constraint firstItem="rO7-8Y-HyU" firstAttribute="leading" secondItem="8oQ-Jx-g1a" secondAttribute="leading" id="39D-Ck-Zeu"/>
+                                    <constraint firstItem="yNb-S7-D3i" firstAttribute="leading" secondItem="DVs-dG-tlg" secondAttribute="leading" id="3L7-0a-7Hc"/>
+                                    <constraint firstItem="nKs-PV-ZCS" firstAttribute="trailing" secondItem="DVs-dG-tlg" secondAttribute="trailing" id="3gZ-2R-4eK"/>
+                                    <constraint firstItem="zje-lB-8ds" firstAttribute="leading" secondItem="7al-WW-UOH" secondAttribute="leading" id="4Cj-CM-g0t"/>
+                                    <constraint firstItem="r8b-a6-Pvc" firstAttribute="trailing" secondItem="0IQ-a1-EkA" secondAttribute="trailing" id="4FP-3M-IDg"/>
+                                    <constraint firstItem="ech-JB-OLH" firstAttribute="top" secondItem="uyz-mU-Be0" secondAttribute="bottom" id="4H4-S9-Xjy"/>
+                                    <constraint firstItem="dXk-fT-RtM" firstAttribute="bottom" secondItem="ech-JB-OLH" secondAttribute="bottom" id="4Qf-nE-irK"/>
+                                    <constraint firstAttribute="trailing" secondItem="LEG-Qj-o0K" secondAttribute="trailing" constant="56" id="4XE-kN-6h9"/>
+                                    <constraint firstItem="dXk-fT-RtM" firstAttribute="trailing" secondItem="yNb-S7-D3i" secondAttribute="trailing" id="4qa-SY-ZGr"/>
+                                    <constraint firstItem="ZEl-nj-0sv" firstAttribute="leading" secondItem="K0B-UM-Q3f" secondAttribute="leading" id="4vW-4F-6Sr"/>
+                                    <constraint firstItem="rTi-Fq-d2w" firstAttribute="top" secondItem="rdP-Nr-bAu" secondAttribute="top" id="4zg-kb-NLJ"/>
+                                    <constraint firstItem="dXk-fT-RtM" firstAttribute="top" secondItem="r8b-a6-Pvc" secondAttribute="top" id="52t-LX-Bkn"/>
+                                    <constraint firstItem="pSV-DK-2DG" firstAttribute="leading" secondItem="AKb-7e-tBu" secondAttribute="leading" id="5az-7r-KYw"/>
+                                    <constraint firstItem="7ZJ-MB-zwu" firstAttribute="trailing" secondItem="2SC-Fx-ObG" secondAttribute="trailing" id="5sZ-HJ-6Cs"/>
+                                    <constraint firstItem="oCG-G4-Q31" firstAttribute="leading" secondItem="Z2g-tp-5aT" secondAttribute="leading" constant="168" id="5t4-yR-QNw"/>
+                                    <constraint firstItem="rdP-Nr-bAu" firstAttribute="trailing" secondItem="2fJ-UY-uWl" secondAttribute="trailing" id="62b-tq-Mxh"/>
+                                    <constraint firstItem="5mv-8W-cza" firstAttribute="trailing" secondItem="ZEl-nj-0sv" secondAttribute="trailing" id="64g-EU-4dy"/>
+                                    <constraint firstItem="yNb-S7-D3i" firstAttribute="top" secondItem="bnW-Nh-fAI" secondAttribute="top" id="686-sz-Bq5"/>
+                                    <constraint firstItem="XZp-97-plA" firstAttribute="leading" secondItem="DxT-91-jx1" secondAttribute="leading" id="6Bz-Gu-6yH"/>
+                                    <constraint firstItem="z0Y-6a-bYZ" firstAttribute="bottom" secondItem="ySe-hu-HyG" secondAttribute="bottom" id="6cb-yI-cOn"/>
+                                    <constraint firstItem="pkD-Nn-u8C" firstAttribute="bottom" secondItem="8YH-8H-a65" secondAttribute="bottom" id="6fS-06-YS5"/>
+                                    <constraint firstItem="Qlv-1f-a1i" firstAttribute="leading" secondItem="ftF-09-opb" secondAttribute="leading" id="6le-nT-YK6"/>
+                                    <constraint firstItem="Qcm-1s-mtU" firstAttribute="top" secondItem="ech-JB-OLH" secondAttribute="bottom" id="6rZ-SD-gnh"/>
+                                    <constraint firstItem="LEG-Qj-o0K" firstAttribute="leading" secondItem="WQ8-El-D2d" secondAttribute="trailing" id="6wR-UQ-fLs"/>
+                                    <constraint firstItem="HB6-Ak-DgA" firstAttribute="leading" secondItem="kkP-R7-2hA" secondAttribute="leading" id="755-K9-1Pm"/>
+                                    <constraint firstItem="Qlv-1f-a1i" firstAttribute="bottom" secondItem="kWU-di-OPu" secondAttribute="bottom" id="7Cu-hR-N0l"/>
+                                    <constraint firstItem="oCG-G4-Q31" firstAttribute="leading" secondItem="DxT-91-jx1" secondAttribute="trailing" id="7Ff-1k-NRq"/>
+                                    <constraint firstItem="Vy3-gw-HHm" firstAttribute="leading" secondItem="Z2g-tp-5aT" secondAttribute="leading" id="7Kt-9W-OIy"/>
+                                    <constraint firstItem="rTi-Fq-d2w" firstAttribute="leading" secondItem="trF-rM-Vwy" secondAttribute="leading" id="7gK-8a-1vJ"/>
+                                    <constraint firstItem="ySe-hu-HyG" firstAttribute="trailing" secondItem="CMJ-3w-mwa" secondAttribute="trailing" id="7gt-NU-1fE"/>
+                                    <constraint firstItem="XZp-97-plA" firstAttribute="bottom" secondItem="kWU-di-OPu" secondAttribute="bottom" id="7lK-Hf-0Aj"/>
+                                    <constraint firstItem="0IQ-a1-EkA" firstAttribute="bottom" secondItem="pkD-Nn-u8C" secondAttribute="bottom" id="84F-UU-jvl"/>
+                                    <constraint firstItem="K0B-UM-Q3f" firstAttribute="bottom" secondItem="rO7-8Y-HyU" secondAttribute="bottom" id="87Z-io-zI7"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vy3-gw-HHm" secondAttribute="bottom" constant="56" id="8Jl-07-TsL"/>
+                                    <constraint firstItem="WQ8-El-D2d" firstAttribute="leading" secondItem="WeM-Xb-mW2" secondAttribute="leading" id="8zZ-vM-AWl"/>
+                                    <constraint firstItem="DxT-91-jx1" firstAttribute="leading" secondItem="nKs-PV-ZCS" secondAttribute="trailing" id="9VI-IW-kKq"/>
+                                    <constraint firstItem="N2S-Ha-G5W" firstAttribute="trailing" secondItem="75K-f8-5nv" secondAttribute="trailing" id="9iv-gm-fxf"/>
+                                    <constraint firstItem="Kpl-GV-qvZ" firstAttribute="bottom" secondItem="xcm-Jf-mz7" secondAttribute="bottom" id="9kR-3g-L2e"/>
+                                    <constraint firstItem="trF-rM-Vwy" firstAttribute="trailing" secondItem="Kpl-GV-qvZ" secondAttribute="trailing" id="9le-tX-NQg"/>
+                                    <constraint firstItem="oCG-G4-Q31" firstAttribute="top" secondItem="Z2g-tp-5aT" secondAttribute="top" id="A2U-de-tas"/>
+                                    <constraint firstItem="Qcm-1s-mtU" firstAttribute="leading" secondItem="ech-JB-OLH" secondAttribute="leading" id="A99-ni-UfP"/>
+                                    <constraint firstItem="uyz-mU-Be0" firstAttribute="trailing" secondItem="RMD-30-7mi" secondAttribute="trailing" id="AHQ-c6-UcN"/>
+                                    <constraint firstItem="uyz-mU-Be0" firstAttribute="top" secondItem="Z2g-tp-5aT" secondAttribute="top" constant="112" id="AHY-de-ChC"/>
+                                    <constraint firstItem="LEG-Qj-o0K" firstAttribute="leading" secondItem="Z2g-tp-5aT" secondAttribute="leading" constant="336" id="AIb-68-hmF"/>
+                                    <constraint firstItem="Kpl-GV-qvZ" firstAttribute="leading" secondItem="trF-rM-Vwy" secondAttribute="leading" id="AY1-dx-7sO"/>
+                                    <constraint firstItem="rTi-Fq-d2w" firstAttribute="leading" secondItem="0IQ-a1-EkA" secondAttribute="leading" id="Aac-TO-4ds"/>
+                                    <constraint firstItem="uyz-mU-Be0" firstAttribute="leading" secondItem="RMD-30-7mi" secondAttribute="leading" id="Aum-MD-VHx"/>
+                                    <constraint firstItem="wu1-lE-5Ep" firstAttribute="top" secondItem="0tw-as-iez" secondAttribute="top" id="B5V-yo-0Aj"/>
+                                    <constraint firstItem="z0Y-6a-bYZ" firstAttribute="bottom" secondItem="zjU-eN-WuX" secondAttribute="bottom" id="B7J-WA-M4g"/>
+                                    <constraint firstItem="l3V-Or-66G" firstAttribute="trailing" secondItem="8YH-8H-a65" secondAttribute="trailing" id="C9O-Px-zsc"/>
+                                    <constraint firstItem="r8b-a6-Pvc" firstAttribute="trailing" secondItem="bnW-Nh-fAI" secondAttribute="trailing" id="CSa-LC-oy8"/>
+                                    <constraint firstItem="5Yk-US-FgX" firstAttribute="trailing" secondItem="rO7-8Y-HyU" secondAttribute="trailing" id="CT5-zC-KWD"/>
+                                    <constraint firstItem="bYN-kM-2us" firstAttribute="bottom" secondItem="0IQ-a1-EkA" secondAttribute="bottom" id="CTo-cj-WXZ"/>
+                                    <constraint firstItem="Vy3-gw-HHm" firstAttribute="top" secondItem="Z2g-tp-5aT" secondAttribute="top" constant="336" id="CWg-oV-aN3"/>
+                                    <constraint firstItem="2fJ-UY-uWl" firstAttribute="leading" secondItem="rdP-Nr-bAu" secondAttribute="leading" id="CmZ-7L-TSy"/>
+                                    <constraint firstItem="dXk-fT-RtM" firstAttribute="bottom" secondItem="r8b-a6-Pvc" secondAttribute="bottom" id="DPK-xg-1fj"/>
+                                    <constraint firstItem="LIR-uB-J8E" firstAttribute="trailing" secondItem="ftF-09-opb" secondAttribute="trailing" id="DVm-Jw-vbd"/>
+                                    <constraint firstItem="0tw-as-iez" firstAttribute="bottom" secondItem="xcm-Jf-mz7" secondAttribute="bottom" id="DfD-PQ-HPD"/>
+                                    <constraint firstItem="0tw-as-iez" firstAttribute="trailing" secondItem="KxZ-VC-dCQ" secondAttribute="trailing" id="Dik-ut-kn7"/>
+                                    <constraint firstItem="e1m-ld-JH0" firstAttribute="leading" secondItem="qkN-eH-4LQ" secondAttribute="leading" id="DuU-Gh-jHz"/>
+                                    <constraint firstItem="Kpl-GV-qvZ" firstAttribute="top" secondItem="AdM-Ji-YDA" secondAttribute="top" id="EOw-AW-CYv"/>
+                                    <constraint firstItem="bYN-kM-2us" firstAttribute="bottom" secondItem="Qcm-1s-mtU" secondAttribute="bottom" id="EUk-AZ-7cG"/>
+                                    <constraint firstItem="ftF-09-opb" firstAttribute="leading" secondItem="LIR-uB-J8E" secondAttribute="leading" id="EyK-Jm-WyA"/>
+                                    <constraint firstItem="rdP-Nr-bAu" firstAttribute="bottom" secondItem="l3V-Or-66G" secondAttribute="bottom" id="F7o-eh-nBH"/>
+                                    <constraint firstItem="CMJ-3w-mwa" firstAttribute="top" secondItem="AKb-7e-tBu" secondAttribute="top" id="FXs-T3-zpM"/>
+                                    <constraint firstItem="75K-f8-5nv" firstAttribute="top" secondItem="LIR-uB-J8E" secondAttribute="top" id="Fmi-Hb-Ute"/>
+                                    <constraint firstItem="yNb-S7-D3i" firstAttribute="bottom" secondItem="bnW-Nh-fAI" secondAttribute="bottom" id="FqB-gO-CUr"/>
+                                    <constraint firstItem="7ZJ-MB-zwu" firstAttribute="top" secondItem="pSV-DK-2DG" secondAttribute="top" id="G1A-HA-k1h"/>
+                                    <constraint firstItem="oCG-G4-Q31" firstAttribute="top" secondItem="DxT-91-jx1" secondAttribute="top" id="GKs-yx-2nU"/>
+                                    <constraint firstItem="z0Y-6a-bYZ" firstAttribute="leading" secondItem="AKb-7e-tBu" secondAttribute="leading" id="GR0-UI-F6O"/>
+                                    <constraint firstItem="nKs-PV-ZCS" firstAttribute="top" secondItem="xWU-it-sBs" secondAttribute="top" id="HQp-2e-H4s"/>
+                                    <constraint firstItem="pSV-DK-2DG" firstAttribute="trailing" secondItem="5mv-8W-cza" secondAttribute="trailing" id="HS6-mo-tS9"/>
+                                    <constraint firstAttribute="trailing" secondItem="2SC-Fx-ObG" secondAttribute="trailing" id="Hss-wH-Fz6"/>
+                                    <constraint firstItem="kWU-di-OPu" firstAttribute="trailing" secondItem="zje-lB-8ds" secondAttribute="trailing" id="IKa-4N-lwY"/>
+                                    <constraint firstItem="kkP-R7-2hA" firstAttribute="top" secondItem="8YH-8H-a65" secondAttribute="top" id="Ich-iR-PVH"/>
+                                    <constraint firstItem="zjU-eN-WuX" firstAttribute="trailing" secondItem="wu1-lE-5Ep" secondAttribute="trailing" id="Ii2-RV-Ua2"/>
+                                    <constraint firstItem="2SC-Fx-ObG" firstAttribute="leading" secondItem="7ZJ-MB-zwu" secondAttribute="leading" id="J0Y-d9-Juu"/>
+                                    <constraint firstItem="kWU-di-OPu" firstAttribute="leading" secondItem="zje-lB-8ds" secondAttribute="leading" id="JQ5-WY-Acd"/>
+                                    <constraint firstItem="e1m-ld-JH0" firstAttribute="leading" secondItem="AdM-Ji-YDA" secondAttribute="leading" id="JWP-G7-8pT"/>
+                                    <constraint firstItem="xcm-Jf-mz7" firstAttribute="top" secondItem="0tw-as-iez" secondAttribute="top" id="Jhp-a5-yH1"/>
+                                    <constraint firstItem="zjU-eN-WuX" firstAttribute="top" secondItem="z0Y-6a-bYZ" secondAttribute="top" id="JmV-eB-aq3"/>
+                                    <constraint firstItem="8oQ-Jx-g1a" firstAttribute="leading" secondItem="Z2g-tp-5aT" secondAttribute="leading" constant="392" id="JyB-a8-TUe"/>
+                                    <constraint firstItem="Kpl-GV-qvZ" firstAttribute="bottom" secondItem="AdM-Ji-YDA" secondAttribute="bottom" id="K4p-SL-WAc"/>
+                                    <constraint firstItem="Koq-b3-izP" firstAttribute="leading" secondItem="oCG-G4-Q31" secondAttribute="trailing" id="KFI-4g-agW"/>
+                                    <constraint firstItem="oCG-G4-Q31" firstAttribute="trailing" secondItem="kWU-di-OPu" secondAttribute="trailing" id="KXP-bL-rUO"/>
+                                    <constraint firstItem="zjU-eN-WuX" firstAttribute="leading" secondItem="wu1-lE-5Ep" secondAttribute="leading" id="Kl4-0y-afi"/>
+                                    <constraint firstItem="xcm-Jf-mz7" firstAttribute="leading" secondItem="2fJ-UY-uWl" secondAttribute="leading" id="KuP-9I-gdV"/>
+                                    <constraint firstItem="uyz-mU-Be0" firstAttribute="bottom" secondItem="yNb-S7-D3i" secondAttribute="bottom" id="L4N-eO-E2M"/>
+                                    <constraint firstItem="0IQ-a1-EkA" firstAttribute="top" secondItem="pkD-Nn-u8C" secondAttribute="top" id="Lbc-fw-sp3"/>
+                                    <constraint firstItem="rdP-Nr-bAu" firstAttribute="top" secondItem="l3V-Or-66G" secondAttribute="top" id="MZM-lu-Ltu"/>
+                                    <constraint firstItem="dXk-fT-RtM" firstAttribute="leading" secondItem="bYN-kM-2us" secondAttribute="leading" id="McV-5x-MiN"/>
+                                    <constraint firstItem="WQ8-El-D2d" firstAttribute="leading" secondItem="Z2g-tp-5aT" secondAttribute="leading" constant="280" id="N6N-l1-QYA"/>
+                                    <constraint firstItem="K0B-UM-Q3f" firstAttribute="top" secondItem="rO7-8Y-HyU" secondAttribute="top" id="NCD-DX-8Sz"/>
+                                    <constraint firstItem="xWU-it-sBs" firstAttribute="bottom" secondItem="nKs-PV-ZCS" secondAttribute="bottom" id="NiP-Ao-CiR"/>
+                                    <constraint firstItem="Wcx-bS-vVA" firstAttribute="leading" secondItem="Vy3-gw-HHm" secondAttribute="leading" id="Nsq-Uj-siZ"/>
+                                    <constraint firstItem="ftF-09-opb" firstAttribute="bottom" secondItem="zje-lB-8ds" secondAttribute="bottom" id="OE8-7w-0T6"/>
+                                    <constraint firstItem="ZEl-nj-0sv" firstAttribute="bottom" secondItem="N2S-Ha-G5W" secondAttribute="bottom" id="Oac-qr-qkB"/>
+                                    <constraint firstItem="5Yk-US-FgX" firstAttribute="bottom" secondItem="ZEl-nj-0sv" secondAttribute="bottom" id="Oex-4E-bxy"/>
+                                    <constraint firstItem="5Yk-US-FgX" firstAttribute="top" secondItem="ZEl-nj-0sv" secondAttribute="top" id="Oz0-Vy-fq7"/>
+                                    <constraint firstItem="DVs-dG-tlg" firstAttribute="bottom" secondItem="XZp-97-plA" secondAttribute="bottom" id="PMc-m6-M1k"/>
+                                    <constraint firstItem="Qcm-1s-mtU" firstAttribute="top" secondItem="bYN-kM-2us" secondAttribute="top" id="Pe5-Dr-3vi"/>
+                                    <constraint firstItem="8oQ-Jx-g1a" firstAttribute="top" secondItem="LEG-Qj-o0K" secondAttribute="top" id="PqG-Ij-hog"/>
+                                    <constraint firstItem="trF-rM-Vwy" firstAttribute="trailing" secondItem="rTi-Fq-d2w" secondAttribute="trailing" id="Q6c-Br-ubB"/>
+                                    <constraint firstItem="75K-f8-5nv" firstAttribute="leading" secondItem="kkP-R7-2hA" secondAttribute="leading" id="Qnt-QX-rjV"/>
+                                    <constraint firstItem="AKb-7e-tBu" firstAttribute="trailing" secondItem="pSV-DK-2DG" secondAttribute="trailing" id="QuW-bW-Z10"/>
+                                    <constraint firstItem="e1m-ld-JH0" firstAttribute="trailing" secondItem="qkN-eH-4LQ" secondAttribute="trailing" id="Rli-wj-jlU"/>
+                                    <constraint firstItem="3rz-p1-i2e" firstAttribute="top" secondItem="Vy3-gw-HHm" secondAttribute="bottom" id="Rzu-cz-jEh"/>
+                                    <constraint firstItem="z0Y-6a-bYZ" firstAttribute="top" secondItem="ySe-hu-HyG" secondAttribute="top" id="SSk-qU-srA"/>
+                                    <constraint firstItem="7al-WW-UOH" firstAttribute="trailing" secondItem="pkD-Nn-u8C" secondAttribute="trailing" id="TNm-aB-oTp"/>
+                                    <constraint firstItem="K0B-UM-Q3f" firstAttribute="trailing" secondItem="LEG-Qj-o0K" secondAttribute="trailing" id="TYd-dx-qD2"/>
+                                    <constraint firstItem="pSV-DK-2DG" firstAttribute="bottom" secondItem="kkP-R7-2hA" secondAttribute="bottom" id="TfC-ma-waR"/>
+                                    <constraint firstItem="8YH-8H-a65" firstAttribute="trailing" secondItem="LIR-uB-J8E" secondAttribute="trailing" id="Tt4-ka-kxP"/>
+                                    <constraint firstItem="zjU-eN-WuX" firstAttribute="trailing" secondItem="HB6-Ak-DgA" secondAttribute="trailing" id="UHH-kD-JV7"/>
+                                    <constraint firstItem="rTi-Fq-d2w" firstAttribute="top" secondItem="qkN-eH-4LQ" secondAttribute="top" id="UN3-Kv-AOT"/>
+                                    <constraint firstItem="oCG-G4-Q31" firstAttribute="bottom" secondItem="DxT-91-jx1" secondAttribute="bottom" id="UNZ-JT-sP7"/>
+                                    <constraint firstItem="RMD-30-7mi" firstAttribute="top" secondItem="Z2g-tp-5aT" secondAttribute="top" constant="56" id="Uhk-hb-1xj"/>
+                                    <constraint firstItem="2SC-Fx-ObG" firstAttribute="top" secondItem="5mv-8W-cza" secondAttribute="top" id="Uz7-f6-dYc"/>
+                                    <constraint firstItem="ech-JB-OLH" firstAttribute="trailing" secondItem="uyz-mU-Be0" secondAttribute="trailing" id="V5d-s9-Hc3"/>
+                                    <constraint firstItem="dXk-fT-RtM" firstAttribute="leading" secondItem="yNb-S7-D3i" secondAttribute="leading" id="VMD-bP-4CF"/>
+                                    <constraint firstItem="zjU-eN-WuX" firstAttribute="leading" secondItem="HB6-Ak-DgA" secondAttribute="leading" id="Vin-dJ-8XJ"/>
+                                    <constraint firstItem="0zZ-PI-rM3" firstAttribute="top" secondItem="v5c-iA-Z2Q" secondAttribute="top" id="WAv-eZ-Odc"/>
+                                    <constraint firstItem="RMD-30-7mi" firstAttribute="top" secondItem="xWU-it-sBs" secondAttribute="bottom" id="WKJ-15-AZU"/>
+                                    <constraint firstItem="z0Y-6a-bYZ" firstAttribute="trailing" secondItem="v5c-iA-Z2Q" secondAttribute="trailing" id="WTS-ar-TP6"/>
+                                    <constraint firstItem="7ZJ-MB-zwu" firstAttribute="trailing" secondItem="CMJ-3w-mwa" secondAttribute="trailing" id="Wm5-AX-d9y"/>
+                                    <constraint firstItem="ftF-09-opb" firstAttribute="top" secondItem="zje-lB-8ds" secondAttribute="top" id="Wq0-C9-AkU"/>
+                                    <constraint firstItem="RMD-30-7mi" firstAttribute="top" secondItem="DVs-dG-tlg" secondAttribute="top" id="Wuw-Ba-4Cs"/>
+                                    <constraint firstItem="0zZ-PI-rM3" firstAttribute="bottom" secondItem="v5c-iA-Z2Q" secondAttribute="bottom" id="XEI-s4-t1V"/>
+                                    <constraint firstItem="Qlv-1f-a1i" firstAttribute="top" secondItem="WeM-Xb-mW2" secondAttribute="top" id="Xh3-Wa-45p"/>
+                                    <constraint firstItem="e1m-ld-JH0" firstAttribute="top" secondItem="Vy3-gw-HHm" secondAttribute="top" id="YKC-yf-HVs"/>
+                                    <constraint firstItem="2fJ-UY-uWl" firstAttribute="trailing" secondItem="xcm-Jf-mz7" secondAttribute="trailing" id="YLi-YW-i6G"/>
+                                    <constraint firstItem="3rz-p1-i2e" firstAttribute="top" secondItem="AdM-Ji-YDA" secondAttribute="top" id="YYN-zL-ArU"/>
+                                    <constraint firstItem="2fJ-UY-uWl" firstAttribute="top" secondItem="trF-rM-Vwy" secondAttribute="top" id="Yb7-tC-nmS"/>
+                                    <constraint firstItem="XZp-97-plA" firstAttribute="trailing" secondItem="DxT-91-jx1" secondAttribute="trailing" id="YnX-3m-SX0"/>
+                                    <constraint firstItem="WQ8-El-D2d" firstAttribute="top" secondItem="LEG-Qj-o0K" secondAttribute="top" id="Z1L-FJ-Q5L"/>
+                                    <constraint firstItem="uyz-mU-Be0" firstAttribute="top" secondItem="yNb-S7-D3i" secondAttribute="top" id="ZyT-we-HiI"/>
+                                    <constraint firstItem="75K-f8-5nv" firstAttribute="trailing" secondItem="kkP-R7-2hA" secondAttribute="trailing" id="ZzZ-Ot-mNx"/>
+                                    <constraint firstItem="nKs-PV-ZCS" firstAttribute="leading" secondItem="xWU-it-sBs" secondAttribute="trailing" id="a0R-a0-VbP"/>
+                                    <constraint firstItem="8YH-8H-a65" firstAttribute="top" secondItem="pkD-Nn-u8C" secondAttribute="top" id="aHU-GD-z9E"/>
+                                    <constraint firstItem="KxZ-VC-dCQ" firstAttribute="top" secondItem="2fJ-UY-uWl" secondAttribute="top" id="aTO-eH-bMU"/>
+                                    <constraint firstItem="7al-WW-UOH" firstAttribute="bottom" secondItem="LIR-uB-J8E" secondAttribute="bottom" id="aUc-pk-dJ7"/>
+                                    <constraint firstItem="2SC-Fx-ObG" firstAttribute="bottom" secondItem="5mv-8W-cza" secondAttribute="bottom" id="aZK-JF-fxW"/>
+                                    <constraint firstItem="XZp-97-plA" firstAttribute="top" secondItem="DVs-dG-tlg" secondAttribute="top" id="aah-Vz-wCK"/>
+                                    <constraint firstItem="ySe-hu-HyG" firstAttribute="leading" secondItem="CMJ-3w-mwa" secondAttribute="leading" id="amt-uw-Y0I"/>
+                                    <constraint firstItem="ftF-09-opb" firstAttribute="top" secondItem="N2S-Ha-G5W" secondAttribute="top" id="bBI-W9-0XR"/>
+                                    <constraint firstItem="N2S-Ha-G5W" firstAttribute="trailing" secondItem="WeM-Xb-mW2" secondAttribute="trailing" id="bsn-wo-lXX"/>
+                                    <constraint firstItem="3rz-p1-i2e" firstAttribute="top" secondItem="Z2g-tp-5aT" secondAttribute="top" constant="392" id="cIC-bV-K9X"/>
+                                    <constraint firstItem="K0B-UM-Q3f" firstAttribute="leading" secondItem="LEG-Qj-o0K" secondAttribute="leading" id="ccq-Jk-dVN"/>
+                                    <constraint firstItem="v5c-iA-Z2Q" firstAttribute="top" secondItem="wu1-lE-5Ep" secondAttribute="top" id="cnr-Ix-isA"/>
+                                    <constraint firstItem="7al-WW-UOH" firstAttribute="top" secondItem="r8b-a6-Pvc" secondAttribute="top" id="d6C-dF-rad"/>
+                                    <constraint firstItem="Qcm-1s-mtU" firstAttribute="top" secondItem="Z2g-tp-5aT" secondAttribute="top" constant="224" id="dCq-sm-QFf"/>
+                                    <constraint firstItem="0IQ-a1-EkA" firstAttribute="trailing" secondItem="rTi-Fq-d2w" secondAttribute="trailing" id="dZx-rX-U6w"/>
+                                    <constraint firstItem="AKb-7e-tBu" firstAttribute="top" secondItem="HB6-Ak-DgA" secondAttribute="top" id="dd9-TA-wyk"/>
+                                    <constraint firstItem="bnW-Nh-fAI" firstAttribute="bottom" secondItem="zje-lB-8ds" secondAttribute="bottom" id="dyC-sU-wY9"/>
+                                    <constraint firstItem="Qcm-1s-mtU" firstAttribute="trailing" secondItem="ech-JB-OLH" secondAttribute="trailing" id="e83-Jw-KDP"/>
+                                    <constraint firstItem="KxZ-VC-dCQ" firstAttribute="trailing" secondItem="l3V-Or-66G" secondAttribute="trailing" id="eMn-7V-Snp"/>
+                                    <constraint firstItem="z0Y-6a-bYZ" firstAttribute="trailing" secondItem="AKb-7e-tBu" secondAttribute="trailing" id="eO5-1P-lIu"/>
+                                    <constraint firstItem="pkD-Nn-u8C" firstAttribute="leading" secondItem="7al-WW-UOH" secondAttribute="leading" id="edM-8X-RJS"/>
+                                    <constraint firstItem="l3V-Or-66G" firstAttribute="leading" secondItem="KxZ-VC-dCQ" secondAttribute="leading" id="f6K-nI-FJq"/>
+                                    <constraint firstItem="N2S-Ha-G5W" firstAttribute="leading" secondItem="WeM-Xb-mW2" secondAttribute="leading" id="fVf-cA-6FX"/>
+                                    <constraint firstItem="Koq-b3-izP" firstAttribute="top" secondItem="oCG-G4-Q31" secondAttribute="top" id="faY-Tt-dCb"/>
+                                    <constraint firstItem="N2S-Ha-G5W" firstAttribute="leading" secondItem="75K-f8-5nv" secondAttribute="leading" id="fxz-Id-CDA"/>
+                                    <constraint firstItem="5Yk-US-FgX" firstAttribute="leading" secondItem="2SC-Fx-ObG" secondAttribute="leading" id="g26-2h-moB"/>
+                                    <constraint firstItem="nKs-PV-ZCS" firstAttribute="leading" secondItem="Z2g-tp-5aT" secondAttribute="leading" constant="56" id="gdf-0z-Fcm"/>
+                                    <constraint firstItem="8YH-8H-a65" firstAttribute="bottom" secondItem="kkP-R7-2hA" secondAttribute="bottom" id="gxV-Zu-ysh"/>
+                                    <constraint firstItem="DVs-dG-tlg" firstAttribute="leading" secondItem="nKs-PV-ZCS" secondAttribute="leading" id="h70-bK-lJK"/>
+                                    <constraint firstItem="Vy3-gw-HHm" firstAttribute="trailing" secondItem="Wcx-bS-vVA" secondAttribute="trailing" id="hNx-oe-6XZ"/>
+                                    <constraint firstItem="0zZ-PI-rM3" firstAttribute="trailing" secondItem="ySe-hu-HyG" secondAttribute="trailing" id="hXN-N2-Nvf"/>
+                                    <constraint firstItem="HB6-Ak-DgA" firstAttribute="top" secondItem="l3V-Or-66G" secondAttribute="top" id="ia2-Ym-5nr"/>
+                                    <constraint firstAttribute="bottom" secondItem="0tw-as-iez" secondAttribute="bottom" id="ifM-hK-27P"/>
+                                    <constraint firstItem="8oQ-Jx-g1a" firstAttribute="trailing" secondItem="rO7-8Y-HyU" secondAttribute="trailing" id="iuS-sq-Pbg"/>
+                                    <constraint firstItem="DxT-91-jx1" firstAttribute="top" secondItem="nKs-PV-ZCS" secondAttribute="top" id="j3W-Tw-B9b"/>
+                                    <constraint firstItem="LIR-uB-J8E" firstAttribute="bottom" secondItem="75K-f8-5nv" secondAttribute="bottom" id="j8m-dg-MLf"/>
+                                    <constraint firstItem="zjU-eN-WuX" firstAttribute="top" secondItem="KxZ-VC-dCQ" secondAttribute="top" id="jY9-LN-xUO"/>
+                                    <constraint firstItem="5mv-8W-cza" firstAttribute="bottom" secondItem="75K-f8-5nv" secondAttribute="bottom" id="jaL-QE-xvr"/>
+                                    <constraint firstItem="CMJ-3w-mwa" firstAttribute="bottom" secondItem="AKb-7e-tBu" secondAttribute="bottom" id="jsD-ud-Y2B"/>
+                                    <constraint firstItem="Wcx-bS-vVA" firstAttribute="top" secondItem="Qcm-1s-mtU" secondAttribute="bottom" id="kJY-lE-xRs"/>
+                                    <constraint firstItem="ZEl-nj-0sv" firstAttribute="top" secondItem="N2S-Ha-G5W" secondAttribute="top" id="kU2-kl-SrD"/>
+                                    <constraint firstItem="WeM-Xb-mW2" firstAttribute="trailing" secondItem="WQ8-El-D2d" secondAttribute="trailing" id="ke4-S4-fvY"/>
+                                    <constraint firstItem="3rz-p1-i2e" firstAttribute="leading" secondItem="Vy3-gw-HHm" secondAttribute="leading" id="khU-mh-j0O"/>
+                                    <constraint firstItem="WeM-Xb-mW2" firstAttribute="bottom" secondItem="K0B-UM-Q3f" secondAttribute="bottom" id="lAJ-FY-Zxz"/>
+                                    <constraint firstItem="Wcx-bS-vVA" firstAttribute="bottom" secondItem="qkN-eH-4LQ" secondAttribute="bottom" id="lNJ-xc-mlX"/>
+                                    <constraint firstItem="ySe-hu-HyG" firstAttribute="leading" secondItem="0zZ-PI-rM3" secondAttribute="leading" id="m6T-Vd-MjC"/>
+                                    <constraint firstItem="0tw-as-iez" firstAttribute="leading" secondItem="KxZ-VC-dCQ" secondAttribute="leading" id="mZU-rt-e32"/>
+                                    <constraint firstItem="ech-JB-OLH" firstAttribute="top" secondItem="dXk-fT-RtM" secondAttribute="top" id="n79-X1-sNO"/>
+                                    <constraint firstItem="K0B-UM-Q3f" firstAttribute="top" secondItem="WeM-Xb-mW2" secondAttribute="top" id="nRP-SV-dgk"/>
+                                    <constraint firstItem="HB6-Ak-DgA" firstAttribute="bottom" secondItem="l3V-Or-66G" secondAttribute="bottom" id="nc5-qv-xyh"/>
+                                    <constraint firstItem="0IQ-a1-EkA" firstAttribute="top" secondItem="bYN-kM-2us" secondAttribute="top" id="oY7-cM-ml6"/>
+                                    <constraint firstItem="WQ8-El-D2d" firstAttribute="bottom" secondItem="LEG-Qj-o0K" secondAttribute="bottom" id="oa3-fC-ONU"/>
+                                    <constraint firstItem="Koq-b3-izP" firstAttribute="leading" secondItem="Qlv-1f-a1i" secondAttribute="leading" id="okl-AL-PFe"/>
+                                    <constraint firstItem="ech-JB-OLH" firstAttribute="leading" secondItem="uyz-mU-Be0" secondAttribute="leading" id="otD-yL-DZS"/>
+                                    <constraint firstItem="Vy3-gw-HHm" firstAttribute="bottom" secondItem="e1m-ld-JH0" secondAttribute="bottom" id="ouh-gS-vnf"/>
+                                    <constraint firstItem="uyz-mU-Be0" firstAttribute="top" secondItem="RMD-30-7mi" secondAttribute="bottom" id="p6C-yQ-Jre"/>
+                                    <constraint firstItem="WeM-Xb-mW2" firstAttribute="bottom" secondItem="Qlv-1f-a1i" secondAttribute="bottom" id="p7z-Ge-gog"/>
+                                    <constraint firstItem="Kpl-GV-qvZ" firstAttribute="top" secondItem="xcm-Jf-mz7" secondAttribute="top" id="pOb-tz-lcd"/>
+                                    <constraint firstItem="pSV-DK-2DG" firstAttribute="top" secondItem="kkP-R7-2hA" secondAttribute="top" id="pkb-SE-kzX"/>
+                                    <constraint firstItem="kWU-di-OPu" firstAttribute="top" secondItem="Qlv-1f-a1i" secondAttribute="top" id="pp4-Gd-vId"/>
+                                    <constraint firstItem="7al-WW-UOH" firstAttribute="trailing" secondItem="zje-lB-8ds" secondAttribute="trailing" id="puf-rL-piH"/>
+                                    <constraint firstItem="Vy3-gw-HHm" firstAttribute="top" secondItem="Wcx-bS-vVA" secondAttribute="bottom" id="pvm-TV-7Dl"/>
+                                    <constraint firstItem="ech-JB-OLH" firstAttribute="top" secondItem="Z2g-tp-5aT" secondAttribute="top" constant="168" id="pzd-Rx-mJ8"/>
+                                    <constraint firstItem="v5c-iA-Z2Q" firstAttribute="bottom" secondItem="wu1-lE-5Ep" secondAttribute="bottom" id="qCQ-bU-DCq"/>
+                                    <constraint firstItem="v5c-iA-Z2Q" firstAttribute="leading" secondItem="z0Y-6a-bYZ" secondAttribute="leading" id="qCm-kR-mGz"/>
+                                    <constraint firstItem="K0B-UM-Q3f" firstAttribute="trailing" secondItem="ZEl-nj-0sv" secondAttribute="trailing" id="qJ5-GE-1d1"/>
+                                    <constraint firstItem="8YH-8H-a65" firstAttribute="leading" secondItem="l3V-Or-66G" secondAttribute="leading" id="qWI-1B-PWO"/>
+                                    <constraint firstItem="Koq-b3-izP" firstAttribute="top" secondItem="WQ8-El-D2d" secondAttribute="top" id="rRB-kC-aLp"/>
+                                    <constraint firstItem="Koq-b3-izP" firstAttribute="leading" secondItem="Z2g-tp-5aT" secondAttribute="leading" constant="224" id="rqG-UY-CA1"/>
+                                    <constraint firstItem="pSV-DK-2DG" firstAttribute="bottom" secondItem="7ZJ-MB-zwu" secondAttribute="bottom" id="s5g-SZ-o10"/>
+                                    <constraint firstItem="0IQ-a1-EkA" firstAttribute="leading" secondItem="r8b-a6-Pvc" secondAttribute="leading" id="s9a-X2-RCT"/>
+                                    <constraint firstItem="DxT-91-jx1" firstAttribute="leading" secondItem="Z2g-tp-5aT" secondAttribute="leading" constant="112" id="sUt-fG-nOZ"/>
+                                    <constraint firstItem="XZp-97-plA" firstAttribute="leading" secondItem="bnW-Nh-fAI" secondAttribute="leading" id="sXA-Kn-66Z"/>
+                                    <constraint firstItem="5mv-8W-cza" firstAttribute="leading" secondItem="ZEl-nj-0sv" secondAttribute="leading" id="sb8-IO-cE4"/>
+                                    <constraint firstItem="rTi-Fq-d2w" firstAttribute="bottom" secondItem="qkN-eH-4LQ" secondAttribute="bottom" id="t3r-1E-Y4i"/>
+                                    <constraint firstItem="Wcx-bS-vVA" firstAttribute="top" secondItem="qkN-eH-4LQ" secondAttribute="top" id="taz-g0-HVi"/>
+                                    <constraint firstItem="e1m-ld-JH0" firstAttribute="top" secondItem="trF-rM-Vwy" secondAttribute="top" id="tb2-tI-2UU"/>
+                                    <constraint firstItem="dXk-fT-RtM" firstAttribute="trailing" secondItem="bYN-kM-2us" secondAttribute="trailing" id="u7y-45-xnl"/>
+                                    <constraint firstItem="Koq-b3-izP" firstAttribute="trailing" secondItem="Qlv-1f-a1i" secondAttribute="trailing" id="uVL-4L-1s1"/>
+                                    <constraint firstItem="XZp-97-plA" firstAttribute="top" secondItem="kWU-di-OPu" secondAttribute="top" id="uVW-65-KX2"/>
+                                    <constraint firstItem="HB6-Ak-DgA" firstAttribute="trailing" secondItem="kkP-R7-2hA" secondAttribute="trailing" id="uWU-GK-NsC"/>
+                                    <constraint firstItem="2SC-Fx-ObG" firstAttribute="trailing" secondItem="5Yk-US-FgX" secondAttribute="trailing" id="udC-wv-EQF"/>
+                                    <constraint firstItem="3rz-p1-i2e" firstAttribute="trailing" secondItem="Vy3-gw-HHm" secondAttribute="trailing" id="ury-A1-G02"/>
+                                    <constraint firstItem="RMD-30-7mi" firstAttribute="bottom" secondItem="DVs-dG-tlg" secondAttribute="bottom" id="v4l-LU-tPe"/>
+                                    <constraint firstItem="qkN-eH-4LQ" firstAttribute="trailing" secondItem="bYN-kM-2us" secondAttribute="trailing" id="vcP-kT-jhG"/>
+                                    <constraint firstItem="Wcx-bS-vVA" firstAttribute="leading" secondItem="Qcm-1s-mtU" secondAttribute="leading" id="vv8-Xg-Bvl"/>
+                                    <constraint firstItem="xWU-it-sBs" firstAttribute="leading" secondItem="RMD-30-7mi" secondAttribute="leading" id="w2R-gD-WRK"/>
+                                    <constraint firstItem="XZp-97-plA" firstAttribute="trailing" secondItem="bnW-Nh-fAI" secondAttribute="trailing" id="wFY-vo-bwM"/>
+                                    <constraint firstItem="pkD-Nn-u8C" firstAttribute="leading" secondItem="rdP-Nr-bAu" secondAttribute="leading" id="wmW-1N-xtl"/>
+                                    <constraint firstItem="ftF-09-opb" firstAttribute="trailing" secondItem="Qlv-1f-a1i" secondAttribute="trailing" id="x2x-fP-qfP"/>
+                                    <constraint firstItem="trF-rM-Vwy" firstAttribute="bottom" secondItem="2fJ-UY-uWl" secondAttribute="bottom" id="yFX-5q-Dfe"/>
+                                    <constraint firstItem="7al-WW-UOH" firstAttribute="bottom" secondItem="r8b-a6-Pvc" secondAttribute="bottom" id="yUk-So-VkE"/>
+                                    <constraint firstItem="5mv-8W-cza" firstAttribute="leading" secondItem="pSV-DK-2DG" secondAttribute="leading" id="z3S-Hv-XbR"/>
+                                    <constraint firstItem="e1m-ld-JH0" firstAttribute="bottom" secondItem="trF-rM-Vwy" secondAttribute="bottom" id="z5x-4Y-jVa"/>
+                                    <constraint firstItem="oCG-G4-Q31" firstAttribute="leading" secondItem="kWU-di-OPu" secondAttribute="leading" id="z9E-LE-Hx9"/>
+                                    <constraint firstItem="5Yk-US-FgX" firstAttribute="leading" secondItem="rO7-8Y-HyU" secondAttribute="leading" id="zBU-XE-S6X"/>
+                                    <constraint firstItem="3rz-p1-i2e" firstAttribute="bottom" secondItem="AdM-Ji-YDA" secondAttribute="bottom" id="zGp-4F-ejQ"/>
+                                    <constraint firstItem="LIR-uB-J8E" firstAttribute="top" secondItem="7al-WW-UOH" secondAttribute="top" id="zht-kz-clG"/>
+                                    <constraint firstItem="Qcm-1s-mtU" firstAttribute="trailing" secondItem="Wcx-bS-vVA" secondAttribute="trailing" id="zv1-Fv-k5r"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Z2g-tp-5aT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hTM-4P-fZl"/>
+                            <constraint firstItem="Z2g-tp-5aT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uuP-xu-MXK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gameBoard" destination="Z2g-tp-5aT" id="TqW-Qv-FCX"/>
+                        <outletCollection property="whiteCheckers" destination="NoX-rn-nqv" collectionClass="NSMutableArray" id="6zd-sW-dPk"/>
+                        <outletCollection property="whiteCheckers" destination="Kf9-D7-scb" collectionClass="NSMutableArray" id="EjL-F7-Mfa"/>
+                        <outletCollection property="whiteCheckers" destination="4Cv-XL-Iod" collectionClass="NSMutableArray" id="cBs-sL-xGV"/>
+                        <outletCollection property="whiteCheckers" destination="83F-Ch-YBS" collectionClass="NSMutableArray" id="6I3-xP-RaD"/>
+                        <outletCollection property="whiteCheckers" destination="uUr-qA-MNm" collectionClass="NSMutableArray" id="hug-0G-WO3"/>
+                        <outletCollection property="whiteCheckers" destination="VAr-LX-KXC" collectionClass="NSMutableArray" id="rcl-nD-1uh"/>
+                        <outletCollection property="whiteCheckers" destination="q0K-hA-SzP" collectionClass="NSMutableArray" id="Uhw-vX-5Zs"/>
+                        <outletCollection property="whiteCheckers" destination="rJS-zS-UWc" collectionClass="NSMutableArray" id="PA6-0R-zPC"/>
+                        <outletCollection property="whiteCheckers" destination="fgK-3u-KqH" collectionClass="NSMutableArray" id="Jwh-GH-Uwy"/>
+                        <outletCollection property="whiteCheckers" destination="KnD-Rc-lXz" collectionClass="NSMutableArray" id="wBA-ro-oZq"/>
+                        <outletCollection property="whiteCheckers" destination="VXH-Rr-UIr" collectionClass="NSMutableArray" id="UT9-Cw-gSI"/>
+                        <outletCollection property="whiteCheckers" destination="3rj-vL-lMe" collectionClass="NSMutableArray" id="ycU-l4-zNd"/>
+                        <outletCollection property="blackCheckers" destination="hEC-I1-pDK" collectionClass="NSMutableArray" id="MEm-KL-N41"/>
+                        <outletCollection property="blackCheckers" destination="cFf-JU-eaa" collectionClass="NSMutableArray" id="Mye-Oh-1cI"/>
+                        <outletCollection property="blackCheckers" destination="M2Y-Hr-0w3" collectionClass="NSMutableArray" id="a9j-jb-qCO"/>
+                        <outletCollection property="blackCheckers" destination="sNr-u4-jcm" collectionClass="NSMutableArray" id="MYe-zb-D5K"/>
+                        <outletCollection property="blackCheckers" destination="i5N-pA-0Nt" collectionClass="NSMutableArray" id="QnV-Cm-tkM"/>
+                        <outletCollection property="blackCheckers" destination="Ls3-kW-CbW" collectionClass="NSMutableArray" id="fku-2d-hhY"/>
+                        <outletCollection property="blackCheckers" destination="fmr-Y9-kxg" collectionClass="NSMutableArray" id="j3V-E5-5a0"/>
+                        <outletCollection property="blackCheckers" destination="LDK-7s-EHQ" collectionClass="NSMutableArray" id="OKh-p9-HKq"/>
+                        <outletCollection property="blackCheckers" destination="SA2-im-L8i" collectionClass="NSMutableArray" id="g2T-QK-6tD"/>
+                        <outletCollection property="blackCheckers" destination="OsU-xU-jvS" collectionClass="NSMutableArray" id="cQf-YC-UcC"/>
+                        <outletCollection property="blackCheckers" destination="z0T-N1-6Zo" collectionClass="NSMutableArray" id="LZk-dj-619"/>
+                        <outletCollection property="blackCheckers" destination="pQ5-ny-EFS" collectionClass="NSMutableArray" id="EMN-1Y-m6P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="389"/>
+        </scene>
+    </scenes>
+</document>
